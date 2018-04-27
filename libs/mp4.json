@@ -1,0 +1,18 @@
+{
+  "0": {
+    "url": "https://www.w3schools.com/html/movie.mp4",
+    "size": "12s"
+  },
+  "1": {
+    "url": "http://www.w3school.com.cn/example/html5/mov_bbb.mp4",
+    "size": "10s"
+  },
+  "2": {
+    "url": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "size": "52s"
+  },
+  "3": {
+    "url": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+    "size": "60s"
+  }
+}
