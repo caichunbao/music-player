@@ -1,7 +1,15 @@
 /**
  * 项目配置文件
+ * create by chunbao.cai on 2017-2-26
  * 此文件是node加载，所以模块语法使用node语法
  * 
+ * 配置包含
+ *  cssmin   -> css压缩
+ *  uglify   -> js混淆
+ *  babel    -> es6检测
+ *  imagemin -> 图片压缩
+ *  watch    -> 监听
+ *  
  */
 
 module.exports = function(grunt) {
