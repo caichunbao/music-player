@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>视频播放器</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    #video {
+      display: none;
+      z-index: 9999;
+      position: relative;
+      width: 100%
+    }
+  </style>
+</head>
+
+<body>
+  <span id="btn">播放</span>
+  <video controls src="" id="video" autoplay></video>
+
+  <script type="text/javascript">
+    window.onload = function() {
+      function $$(id) {
+        return document.getElementById(id)
+      };
+      $$("btn").onclick = function() {
+        $$("video").style.display = "block";
+        $$("video").src = "http://www.w3school.com.cn/example/html5/mov_bbb.mp4";
+        $$("video").play()
+      };
+
+      if ($$("video").ended) {
+        console.log("结束");
+      }
+      $$("video").addEventListener("ended", function() {
+        console.log("结束");
+      });
+
+      $$("video").addEventListener("resize", function() {
+        console.log("改变大小");
+      });
+
+
+    }
+  </script>
+</body>
+
+</html>
